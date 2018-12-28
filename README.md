@@ -1,2 +1,0 @@
-# comparator
-Compare itens
