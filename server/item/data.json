@@ -1,14 +1,80 @@
 {
-  "Sistema 1": {
-    "description": "DEscri alfsdjkf alsdk fjalsd ",
-    "features": [
-      "f jlaskj fa sldkfj",
-      "f jlaskj fa sldkfj",
-      "f jlaskj fa sldkfj"
-    ]
-  },
-  "Sistema 2": {
-    "description": "DEscri alfsdjkf alsdk fjalsd ",
-    "features": ["2 222 f jlaskj fa sldkfj", "f jlaskj fa sldkfj"]
-  }
+  "items": [
+    {
+      "id": 0,
+      "title": "Ambiência sempre em dia",
+      "description": "Orientações e informações sobre ambiência",
+      "attributes": {
+        "Funcionalidades": [
+          "Aaaa",
+          "Bbbbb",
+          "Cccc"
+        ],
+        "Gestor": "Disam",
+        "Usuários": "",
+        "Escopo": "",
+        "Abrangencias": "",
+        "Sombreamentos": "",
+        "Acessos Mensais": "",
+        "Corporativo/Deparatamental": "",
+        "Url": ""
+      }
+    },
+    {
+      "id": 1,
+      "title": "Classificados de Bens",
+      "description": "Disponibilização e reutilização de bens em bom estado",
+      "attributes": {
+        "Gestor": "Dibed"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Crachá Funcional",
+      "description": "Solicitação de novo crachá funcional",
+      "attributes": {
+        "Gestor": "Dimat"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Extrato da Dependência",
+      "description": "Diversas informações da dependência",
+      "attributes": {
+        "Gestor": "Disup"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Fale Cesup",
+      "description": "Canal de comunicação",
+      "attributes": {
+        "Gestor": "Monit"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Gestão do Descarte",
+      "description": "Descarte de bens",
+      "attributes": {
+        "Gestor": "Disam"
+      }
+    },
+    {
+      "id": 6,
+      "title": "RVP",
+      "description": "Relatório de vistoria predial",
+      "attributes": {
+        "Gestor": "Diman"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Relatório fotográfico para sinistros",
+      "description": "Fotos dos sinistros",
+      "attributes": {
+        "Gestor": "Dipat"
+      }
+    }
+  ]
 }

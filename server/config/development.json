@@ -3,6 +3,8 @@
   "port": 4000,
   "corsOriginsAccept": [
     "http://localhost",
+    "http://localhost.bb.com.br:4000",
+    "http://localhost.bb.com.br:3000",
     "http://127.0.0.1",
     "http://localhost:8080",
     "http://127.0.0.1:8080"
