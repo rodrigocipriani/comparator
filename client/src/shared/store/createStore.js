@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 import axios from "axios";
 import reducers from "../../shared/reducers";
-import config from "../../config/config";
+import config from "../../shared/config";
 // import persistentStoreObject from "./persistentStoreMiddleware";
 
 /**

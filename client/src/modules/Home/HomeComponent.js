@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "@material-ui/core";
-import classes from './HomeComponent.module.css';
+import classes from "./HomeComponent.module.css";
 import ComparatorContainer from "../Comparator/ComparatorContainer";
 
 class HomeComponent extends Component {

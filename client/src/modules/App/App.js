@@ -1,21 +1,21 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import amber from '@material-ui/core/colors/amber';
-import blue from '@material-ui/core/colors/blue';
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import amber from "@material-ui/core/colors/amber";
+import blue from "@material-ui/core/colors/blue";
 import createStore from "../../shared/store/createStore";
 import routes from "../../shared/routes";
 import Template from "./Template";
-import config from '../../config/config';
+import config from "../../shared/config";
 // import createBrowserHistory from 'history/createBrowserHistory'
-import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
-import JssProvider from 'react-jss/lib/JssProvider';
-import { create } from 'jss';
-import './App.css'
+import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
+import JssProvider from "react-jss/lib/JssProvider";
+import { create } from "jss";
+import "./App.css";
 
 const store = createStore(null, {
-  showLoggers: false,
+  showLoggers: false
   // DBName: "diary",
   // couchDBUrlConnector:
   //   // "https://rodrigocipriani:LQP1wqj9PQ@couchdb.cloudno.de/rodrigocipriani"
@@ -25,15 +25,15 @@ const store = createStore(null, {
 const theme = createMuiTheme({
   palette: {
     primary: amber,
-    secondary: blue,
+    secondary: blue
   },
   status: {
-    danger: 'yellow',
+    danger: "yellow"
   },
   // https://material-ui.com/style/typography/#migration-to-typography-v2
   typography: {
-    useNextVariants: true,
-  },
+    useNextVariants: true
+  }
 });
 
 /**
@@ -43,11 +43,11 @@ const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
   // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
-  insertionPoint: document.head.firstChild,
+  insertionPoint: document.head.firstChild
 });
 
 const App = () => (
-  <JssProvider jss={jss} generateClassName={generateClassName} >
+  <JssProvider jss={jss} generateClassName={generateClassName}>
     <MuiThemeProvider theme={theme}>
       <Provider store={store}>
         {/*<Router basename={config.basename} history={piwik.connectToHistory(createBrowserHistory())}>*/}

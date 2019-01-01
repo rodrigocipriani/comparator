@@ -1,14 +1,14 @@
 import { authActionTypes } from "./authActions";
-// import {USUARIOS} from '../shared/mock';
+import { USUARIOS } from "../../shared/mock";
 
 // //Busca um usuário forçado nas variáveis de ambiente
-// const usuario = process.env.REACT_APP_USUARIO || null;
+const usuario = process.env.REACT_APP_USUARIO || "rodrigo";
 // console.log('usuario', usuario);
 
 const initialState = {
   token: null,
-  // user: usuario ? USUARIOS[usuario] : null,
-  user: null,
+  user: usuario ? USUARIOS[usuario] : null,
+  // user: null,
   redirectToLogin: false
 };
 
@@ -21,7 +21,8 @@ export default (state = initialState, action) => {
         };
       }
       const user = {
-        ...action.payload.data, avatarImage: `https://humanograma.intranet.bb.com.br/avatar/${action.payload.data.chave.toUpperCase()}`
+        ...action.payload.data,
+        avatarImage: `https://humanograma.intranet.bb.com.br/avatar/${action.payload.data.chave.toUpperCase()}`
       };
       return {
         ...state,

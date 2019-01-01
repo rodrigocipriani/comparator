@@ -1,7 +1,7 @@
 const http = require("http");
 const cluster = require("cluster");
-const app = require("./config/express")();
-const config = require("./config");
+const app = require("./shared/express")();
+const config = require("./shared/config");
 
 if (cluster.isMaster && config.env === "production") {
   // Count the machine's CPUs
